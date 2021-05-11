@@ -1,5 +1,6 @@
 package main.objects;
 
+import main.Client;
 import main.logic.Actions;
 import main.ui.Colors;
 import main.ui.Table;

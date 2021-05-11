@@ -14,12 +14,13 @@ public class Client {
     private static String username;
     private static String password;
 
-
+    // Opens the connection with the server. This server is hosted by Guilherme for the time being.
+    // Thanks to Guilherme for coming to my rescue. His github: https://github.com/S4more
     private static void open()
     {
         try{
             // Change local host for the ip address of where you are hosting your server files.
-            socket = new Socket("localhost", 4999);
+            socket = new Socket("70.26.238.78", 4999);
             out = new PrintWriter(socket.getOutputStream(), true);
             in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
         }
